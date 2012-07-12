@@ -16,11 +16,8 @@ var stable = function(arr, comp) {
     // Stop when the left-hand covers all of the array.
     var len = arr.length, chk;
     for (chk = 1; chk < len; chk *= 2) {
-        console.log("before " + chk + " " + JSON.stringify(arr));
         arr = pass(arr, comp, chk);
     }
-    console.log("result " + JSON.stringify(arr));
-    console.log('');
     return arr;
 };
 
