@@ -2,7 +2,7 @@
 
 // A stable array sort, because `Array#sort()` is not guaranteed stable.
 // This is an implementation of merge sort, without recursion.
-// © 2012 Stéphan Kochen, Angry Bytes. MIT-licensed.
+// © 2012 Stéphan Kochen, Angry Bytes. MIT licensed.
 
 var stable = function(arr, comp) {
     if (typeof(comp) !== 'function') {
@@ -76,7 +76,7 @@ var pass = function(arr, comp, chk) {
     return result;
 };
 
-// Export use CommonJS or to the window.
+// Export using CommonJS or to the window.
 if (typeof(module) !== 'undefined') {
     module.exports = stable;
 }
