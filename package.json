@@ -1,0 +1,15 @@
+{
+  "name": "stable",
+  "version": "0.1.0",
+  "description": "A stable array sort for JavaScript",
+  "main": "stable.js",
+  "devDependencies": {
+    "tap": "0.2",
+    "underscore": "1"
+  },
+  "scripts": {
+    "test": "tap test.js"
+  },
+  "author": "Stéphan Kochen <stephan@angrybytes.com>",
+  "license": "MIT"
+}
