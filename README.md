@@ -1,4 +1,4 @@
-## Stable
+## Stable [![Build Status](https://secure.travis-ci.org/Two-Screen/stable.png)](http://travis-ci.org/Two-Screen/stable)
 
 A stable array sort, because `Array#sort()` is not guaranteed stable.
 
