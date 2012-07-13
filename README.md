@@ -6,7 +6,11 @@ MIT licensed.
 
 ### From the browser
 
-Include `stable.js` in your page, then call `stable()`.
+Include [`stable.js`] or the minified version [`stable.min.js`]
+in your page, then call `stable()`.
+
+ [`stable.js`]: https://raw.github.com/Two-Screen/stable/master/stable.js
+ [`stable.min.js`]: https://raw.github.com/Two-Screen/stable/master/stable.min.js
 
 ### From Node.js
 
