@@ -1,6 +1,6 @@
 {
   "name": "stable",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A stable array sort for JavaScript",
   "main": "stable.js",
   "devDependencies": {
