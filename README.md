@@ -24,14 +24,24 @@ Require in your code:
 
 #### Usage
 
-The default sort is, as with `Array#sort`, lexicographical:
+The default sort is, as with `Array#sort`, lexicographical.
+Unlike `Array#sort`, sorting is **NOT** performed in-place.
 
-    stable(["foo", "bar"]);   // => ["bar", "foo"]
-    stable([10, 1, 5]);       // => [1, 10, 5]
+    stable(["foo", "bar", "baz"]);   // => ["bar", "baz", "foo"]
+    stable([10, 1, 5]);              // => [1, 10, 5]
 
 A comparator function can be specified:
 
-    function cmp(a, b) { return a > b }
-    var res = stable([10, 1, 5], cmp);  // -> [1, 5, 10]
+    // Regular sort() compatible comparator, that returns a number.
+    // This demonstrates the default behavior.
+    function lexCmp(a, b) {
+        return String(a).localeCompare(b);
+    }
+    stable(["foo", "bar", "baz"], lexCmp);   // => ["bar", "baz", "foo"]
 
-Unlike `Array#sort`, sorting is **NOT** performed in-place.
+    // Boolean comparator. Sorts `b` before `a` if true.
+    // This demonstrates a simple way to sort numerically.
+    function greaterThan(a, b) {
+        return a > b;
+    }
+    stable([10, 1, 5], greaterThan);  // -> [1, 5, 10]
