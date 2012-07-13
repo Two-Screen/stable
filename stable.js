@@ -77,9 +77,6 @@ var pass = function(arr, comp, chk) {
 if (typeof(module) !== 'undefined') {
     module.exports = stable;
 }
-else if (typeof(exports) !== 'undefined') {
-    exports.stable = stable;
-}
 else {
     window.stable = stable;
 }
