@@ -1,8 +1,10 @@
+//! stable.js, https://github.com/Two-Screen/stable
+//! © 2012 Stéphan Kochen, Angry Bytes. MIT licensed.
+
 (function() {
 
 // A stable array sort, because `Array#sort()` is not guaranteed stable.
 // This is an implementation of merge sort, without recursion.
-// © 2012 Stéphan Kochen, Angry Bytes. MIT licensed.
 
 var stable = function(arr, comp) {
     if (typeof(comp) !== 'function') {
