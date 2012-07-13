@@ -5,7 +5,6 @@
   "main": "stable.js",
   "devDependencies": {
     "tap": "0.2",
-    "underscore": "1",
     "uglify-js": "1"
   },
   "scripts": {
