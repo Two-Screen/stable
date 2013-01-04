@@ -17,5 +17,8 @@
         "minify": "uglifyjs -o stable.min.js stable.js"
     },
     "author": "Stéphan Kochen <stephan@angrybytes.com>",
+    "contributors": [
+        "Domenic Denicola <domenic@domenicdenicola.com>"
+    ],
     "license": "MIT"
 }
