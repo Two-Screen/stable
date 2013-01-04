@@ -1,4 +1,4 @@
-//! stable.js 0.1.2, https://github.com/Two-Screen/stable
+//! stable.js 0.1.3, https://github.com/Two-Screen/stable
 //! © 2012 Stéphan Kochen, Angry Bytes. MIT licensed.
 
 (function() {
