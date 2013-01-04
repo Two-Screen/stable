@@ -16,6 +16,14 @@ function objCmp(a, b) {
     return a.x > b.x;
 }
 
+test('always returns a new array', function (t) {
+    var array = [1];
+
+    t.doesNotEqual(array, stable(array));
+
+    t.end();
+});
+
 
 test('basic sorting', function(t) {
     t.same(
