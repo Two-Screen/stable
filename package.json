@@ -1,21 +1,21 @@
 {
-  "name": "stable",
-  "version": "0.1.2",
-  "keywords": ["stable", "array", "sort"],
-  "description": "A stable array sort for JavaScript",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Two-Screen/stable.git"
-  },
-  "main": "stable.js",
-  "devDependencies": {
-    "tap": "0.2",
-    "uglify-js": "1"
-  },
-  "scripts": {
-    "test": "tap test.js",
-    "minify": "uglifyjs -o stable.min.js stable.js"
-  },
-  "author": "Stéphan Kochen <stephan@angrybytes.com>",
-  "license": "MIT"
+    "name": "stable",
+    "version": "0.1.2",
+    "keywords": ["stable", "array", "sort"],
+    "description": "A stable array sort for JavaScript",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Two-Screen/stable.git"
+    },
+    "main": "stable.js",
+    "devDependencies": {
+        "tap": "0.2",
+        "uglify-js": "1"
+    },
+    "scripts": {
+        "test": "tap test.js",
+        "minify": "uglifyjs -o stable.min.js stable.js"
+    },
+    "author": "Stéphan Kochen <stephan@angrybytes.com>",
+    "license": "MIT"
 }
