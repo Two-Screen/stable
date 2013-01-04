@@ -16,7 +16,7 @@ var stable = function(arr, comp) {
     var len = arr.length;
 
     // Ensure we always return a new array, even if no passes occur.
-    if (len === 1) {
+    if (len <= 1) {
         return arr.slice();
     }
 
