@@ -7,14 +7,24 @@
         "type": "git",
         "url": "https://github.com/Two-Screen/stable.git"
     },
-    "main": "stable.js",
+    "main": "./stable.js",
     "devDependencies": {
-        "tap": "0.2",
+        "tape": "0.2",
         "uglify-js": "1"
     },
     "scripts": {
-        "test": "tap test.js",
-        "minify": "uglifyjs -o stable.min.js stable.js"
+        "test": "node ./test.js",
+        "minify": "uglifyjs -o ./stable.min.js ./stable.js"
+    },
+    "testling": {
+        "files": "./test.js",
+        "browsers": [
+            "ie6", "ie7", "ie8", "ie9", "ie10",
+            "ff/17", "ff/nightly",
+            "chrome/23", "chrome/canary",
+            "safari/5.1",
+            "opera/12.0", "opera/next"
+        ]
     },
     "author": "Stéphan Kochen <stephan@angrybytes.com>",
     "contributors": [
