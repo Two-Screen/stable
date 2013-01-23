@@ -1,8 +1,11 @@
-## Stable [![Build Status](https://secure.travis-ci.org/Two-Screen/stable.png)](http://travis-ci.org/Two-Screen/stable)
+## Stable
 
 A stable array sort, because `Array#sort()` is not guaranteed stable.
 
 MIT licensed.
+
+[![Node.js CI](https://secure.travis-ci.org/Two-Screen/stable.png)](http://travis-ci.org/Two-Screen/stable)
+[![Browser CI](http://ci.testling.com/Two-Screen/stable.png)](http://ci.testling.com/Two-Screen/stable)
 
 ### From the browser
 
