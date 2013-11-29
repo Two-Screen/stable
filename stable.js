@@ -7,33 +7,54 @@
 // This is an implementation of merge sort, without recursion.
 
 var stable = function(arr, comp) {
+    return exec(arr.slice(), comp);
+};
+
+stable.inplace = function(arr, comp) {
+    var result = exec(arr, comp);
+
+    // This simply copies back if the result isn't in the original array,
+    // which happens on an odd number of passes.
+    if (result !== arr) {
+        pass(result, null, arr.length, arr);
+    }
+
+    return arr;
+};
+
+// Execute the sort using the input array and a second buffer as work space.
+// Returns one of those two, containing the final result.
+function exec(arr, comp) {
     if (typeof(comp) !== 'function') {
         comp = function(a, b) {
             return String(a).localeCompare(b);
         };
     }
 
+    // Short-circuit when there's nothing to sort.
     var len = arr.length;
-
-    // Ensure we always return a new array, even if no passes occur.
     if (len <= 1) {
-        return arr.slice();
+        return arr;
     }
 
     // Rather than dividing input, simply iterate chunks of 1, 2, 4, 8, etc.
     // Chunks are the size of the left or right hand in merge sort.
     // Stop when the left-hand covers all of the array.
+    var buffer = new Array(len);
     for (var chk = 1; chk < len; chk *= 2) {
-        arr = pass(arr, comp, chk);
-    }
-    return arr;
-};
+        pass(arr, comp, chk, buffer);
 
-// Run a single pass with the given chunk size. Returns a new array.
-var pass = function(arr, comp, chk) {
+        var tmp = arr;
+        arr = buffer;
+        buffer = tmp;
+    }
+
+    return arr;
+}
+
+// Run a single pass with the given chunk size.
+var pass = function(arr, comp, chk, result) {
     var len = arr.length;
-    // Output, and position.
-    var result = new Array(len);
     var i = 0;
     // Step size / double chunk size.
     var dbl = chk * 2;
@@ -77,8 +98,6 @@ var pass = function(arr, comp, chk) {
             }
         }
     }
-
-    return result;
 };
 
 // Export using CommonJS or to the window.

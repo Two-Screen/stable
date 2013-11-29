@@ -35,6 +35,20 @@ test('always returns a new array', function(t) {
     t.end();
 });
 
+test('in-place always returns the same array', function(t) {
+    var array;
+
+    array = [];
+    t.equal(array, stable.inplace(array));
+
+    array = [1];
+    t.equal(array, stable.inplace(array));
+
+    array = [1, 2];
+    t.equal(array, stable.inplace(array));
+
+    t.end();
+});
 
 test('basic sorting', function(t) {
     t.same(
