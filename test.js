@@ -12,6 +12,10 @@ function gt(a, b) {
     return a > b;
 }
 
+function diff(a, b) {
+    return a - b;
+}
+
 function objCmp(a, b) {
     return a.x > b.x;
 }
@@ -48,12 +52,17 @@ test('basic sorting', function(t) {
 
 test('comparators', function(t) {
     t.same(
+        stable([9, 2, 10, 5, 4, 3, 0, 1, 8, 6, 7], cmp),
+        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    );
+
+    t.same(
         stable([9, 2, 10, 5, 4, 3, 0, 1, 8, 6, 7], gt),
         [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     );
 
     t.same(
-        stable([9, 2, 10, 5, 4, 3, 0, 1, 8, 6, 7], cmp),
+        stable([9, 2, 10, 5, 4, 3, 0, 1, 8, 6, 7], diff),
         [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     );
 
