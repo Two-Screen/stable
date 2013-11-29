@@ -20,10 +20,9 @@
         "files": "./test.js",
         "browsers": [
             "ie6", "ie7", "ie8", "ie9", "ie10",
-            "ff/17", "ff/nightly",
-            "chrome/23", "chrome/canary",
-            "safari/5.1",
-            "opera/12.0", "opera/next"
+            "firefox/25", "chrome/31", "safari/6.0",
+            "opera/12.0", "opera/17.0",
+            "iphone/6.0", "android-browser/4.2"
         ]
     },
     "author": "Stéphan Kochen <stephan@angrybytes.com>",
