@@ -27,7 +27,8 @@
     },
     "author": "Stéphan Kochen <stephan@angrybytes.com>",
     "contributors": [
-        "Domenic Denicola <domenic@domenicdenicola.com>"
+        "Domenic Denicola <domenic@domenicdenicola.com>",
+        "Yaffle"
     ],
     "license": "MIT"
 }
