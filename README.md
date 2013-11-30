@@ -28,11 +28,17 @@ Require in your code:
 
 #### Usage
 
-The default sort is, as with `Array#sort`, lexicographical.
-Unlike `Array#sort`, sorting is **NOT** performed in-place.
+The default sort is, as with `Array#sort`, lexicographical:
 
     stable(["foo", "bar", "baz"]);   // => ["bar", "baz", "foo"]
     stable([10, 1, 5]);              // => [1, 10, 5]
+
+Unlike `Array#sort`, the default sort is **NOT** in-place. To do an in-place
+sort, use `stable.inplace`, which otherwise works the same:
+
+    var arr = [10, 1, 5];
+    stable(arr) === arr;            // => false
+    stable.inplace(arr) === arr;    // => true
 
 A comparator function can be specified:
 
