@@ -25,8 +25,9 @@
             "iphone/6.0", "android-browser/4.2"
         ]
     },
-    "author": "Stéphan Kochen <stephan@angrybytes.com>",
+    "author": "Angry Bytes <info@angrybytes.com>",
     "contributors": [
+        "Stéphan Kochen <stephan@angrybytes.com>",
         "Domenic Denicola <domenic@domenicdenicola.com>",
         "Yaffle"
     ],

@@ -8,7 +8,7 @@ MIT licensed.
 
 [![Browser CI](http://ci.testling.com/Two-Screen/stable.png)](http://ci.testling.com/Two-Screen/stable)
 
-### From the browser
+#### From the browser
 
 Include [`stable.js`] or the minified version [`stable.min.js`]
 in your page, then call `stable()`.
@@ -16,7 +16,7 @@ in your page, then call `stable()`.
  [`stable.js`]: https://raw.github.com/Two-Screen/stable/master/stable.js
  [`stable.min.js`]: https://raw.github.com/Two-Screen/stable/master/stable.min.js
 
-### From Node.js
+#### From Node.js
 
 Install using NPM:
 
@@ -55,3 +55,25 @@ A comparator function can be specified:
         return a > b;
     }
     stable([10, 1, 5], greaterThan);  // -> [1, 5, 10]
+
+#### License
+
+Copyright (C) 2014 Angry Bytes and contributors.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
