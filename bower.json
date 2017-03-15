@@ -1,6 +1,6 @@
 {
     "name": "stable",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "keywords": ["stable", "array", "sort"],
     "description": "A stable array sort for JavaScript",
     "homepage": "https://github.com/Two-Screen/stable",
