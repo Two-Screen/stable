@@ -8,6 +8,7 @@
         "url": "https://github.com/Two-Screen/stable.git"
     },
     "main": "./stable.js",
+    "types": "./index.d.ts",
     "devDependencies": {
         "tape": "2",
         "uglify-js": "2"
