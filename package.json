@@ -19,7 +19,7 @@
     },
     "scripts": {
         "test": "node ./test.js",
-        "minify": "uglifyjs --comments '/^!/' -c -m -o ./stable.min.js ./stable.js"
+        "minify": "uglifyjs --comments \"/^!/\" -c -m -o ./stable.min.js ./stable.js"
     },
     "testling": {
         "files": "./test.js",
