@@ -1,8 +1,3 @@
-//! stable.js 0.1.6, https://github.com/Two-Screen/stable
-//! © 2017 Angry Bytes and contributors. MIT licensed.
-
-(function() {
-
 // A stable array sort, because `Array#sort()` is not guaranteed stable.
 // This is an implementation of merge sort, without recursion.
 
@@ -100,12 +95,4 @@ var pass = function(arr, comp, chk, result) {
     }
 };
 
-// Export using CommonJS or to the window.
-if (typeof(module) !== 'undefined') {
-    module.exports = stable;
-}
-else {
-    window.stable = stable;
-}
-
-})();
+export default stable;
