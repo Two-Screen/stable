@@ -50,7 +50,8 @@
     "contributors": [
         "Stéphan Kochen <stephan@angrybytes.com>",
         "Domenic Denicola <domenic@domenicdenicola.com>",
-        "Yaffle"
+        "Yaffle",
+        "Mattias Buelens <mattias@buelens.com>"
     ],
     "license": "MIT"
 }
