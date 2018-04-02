@@ -13,6 +13,11 @@
     },
     "main": "./stable.js",
     "types": "./index.d.ts",
+    "files": [
+        "stable.js",
+        "stable.min.js",
+        "index.d.ts"
+    ],
     "devDependencies": {
         "rollup": "^0.50.0",
         "tape": "^4.6.3",
