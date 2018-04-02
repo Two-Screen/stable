@@ -11,15 +11,13 @@
         "type": "git",
         "url": "https://github.com/Two-Screen/stable.git"
     },
-    "main": "./stable.js",
-    "module": "./stable.mjs",
-    "browser": "./stable.min.js",
-    "types": "./index.d.ts",
+    "main": "dist/stable.js",
+    "module": "dist/stable.mjs",
+    "browser": "dist/stable.min.js",
+    "types": "types/index.d.ts",
     "files": [
-        "stable.js",
-        "stable.mjs",
-        "stable.min.js",
-        "index.d.ts"
+        "dist/",
+        "types/"
     ],
     "devDependencies": {
         "rollup": "^0.50.0",
@@ -30,7 +28,7 @@
         "test": "node ./test.js",
         "prepublish": "npm run build && npm run minify",
         "build": "rollup -c",
-        "minify": "uglifyjs --comments \"/^!/\" -c -m -o ./stable.min.js ./stable.js"
+        "minify": "uglifyjs --comments \"/^!/\" -c -m -o dist/stable.min.js dist/stable.js"
     },
     "testling": {
         "files": "./test.js",

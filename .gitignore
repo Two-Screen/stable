@@ -114,6 +114,4 @@ typings/
 
 
 ### Project
-/stable.js
-/stable.min.js
-/stable.mjs
+dist/

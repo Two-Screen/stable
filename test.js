@@ -1,5 +1,5 @@
 var test = require('tape');
-var stable = require('./stable.js');
+var stable = require('./dist/stable.js');
 
 
 function cmp(a, b) {
