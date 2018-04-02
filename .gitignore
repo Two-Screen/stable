@@ -112,3 +112,8 @@ typings/
 # next.js build output
 .next
 
+
+### Project
+/stable.js
+/stable.min.js
+/stable.mjs
