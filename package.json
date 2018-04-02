@@ -13,6 +13,7 @@
     },
     "main": "./stable.js",
     "module": "./stable.mjs",
+    "browser": "./stable.min.js",
     "types": "./index.d.ts",
     "files": [
         "stable.js",
