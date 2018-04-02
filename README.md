@@ -4,17 +4,17 @@ A stable array sort, because `Array#sort()` is not guaranteed stable.
 
 MIT licensed.
 
-[![Node.js CI](https://secure.travis-ci.org/Two-Screen/stable.png)](http://travis-ci.org/Two-Screen/stable)
+[![Node.js CI](https://secure.travis-ci.org/MattiasBuelens/stable.png)](http://travis-ci.org/MattiasBuelens/stable)
 
-[![Browser CI](http://ci.testling.com/Two-Screen/stable.png)](http://ci.testling.com/Two-Screen/stable)
+[![Browser CI](http://ci.testling.com/MattiasBuelens/stable.png)](http://ci.testling.com/MattiasBuelens/stable)
 
 #### From the browser
 
 Include [`stable.js`] or the minified version [`stable.min.js`]
 in your page, then call `stable()`.
 
- [`stable.js`]: https://raw.github.com/Two-Screen/stable/master/stable.js
- [`stable.min.js`]: https://raw.github.com/Two-Screen/stable/master/stable.min.js
+ [`stable.js`]: https://raw.github.com/MattiasBuelens/stable/master/dist/stable.js
+ [`stable.min.js`]: https://raw.github.com/MattiasBuelens/stable/master/dist/stable.min.js
 
 #### From Node.js
 
