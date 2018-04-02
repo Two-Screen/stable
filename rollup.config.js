@@ -6,10 +6,13 @@ var banner = fs.readFileSync('./src/banner.js', 'utf8')
 
 module.exports = {
     input: './src/stable.js',
-    output: {
+    output: [{
         file: pkg.main,
         format: 'umd'
-    },
+    }, {
+        file: pkg.module,
+        format: 'es'
+    }],
     name: 'stable',
     banner: banner
 };

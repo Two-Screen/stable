@@ -12,6 +12,7 @@
         "url": "https://github.com/Two-Screen/stable.git"
     },
     "main": "./stable.js",
+    "module": "./stable.mjs",
     "types": "./index.d.ts",
     "files": [
         "stable.js",
