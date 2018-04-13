@@ -70,7 +70,7 @@ stable([10, 1, 5], greaterThan)  // => [1, 5, 10]
 
 #### License
 
-Copyright (C) 2017 Angry Bytes and contributors.
+Copyright (C) 2018 Angry Bytes and contributors.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

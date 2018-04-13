@@ -1,5 +1,5 @@
 //! stable.js 0.1.6, https://github.com/Two-Screen/stable
-//! © 2017 Angry Bytes and contributors. MIT licensed.
+//! © 2018 Angry Bytes and contributors. MIT licensed.
 
 // A stable array sort, because `Array#sort()` is not guaranteed stable.
 // This is an implementation of merge sort, without recursion.
