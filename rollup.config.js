@@ -1,18 +1,19 @@
-var fs = require('fs');
-var pkg = require('./package.json');
+const fs = require('fs');
+const pkg = require('./package.json');
 
-var banner = fs.readFileSync('./src/banner.js', 'utf8')
+const banner = fs.readFileSync('./src/banner.js', 'utf8')
     .replace('${version}', pkg.version);
 
 module.exports = {
     input: './src/stable.js',
     output: [{
+        banner,
         file: pkg.main,
-        format: 'umd'
+        format: 'umd',
+        name: 'stable'
     }, {
+        banner,
         file: pkg.module,
         format: 'es'
-    }],
-    name: 'stable',
-    banner: banner
+    }]
 };

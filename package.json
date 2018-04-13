@@ -21,9 +21,9 @@
         "index.d.ts"
     ],
     "devDependencies": {
-        "rollup": "^0.50.0",
+        "rollup": "^0.57.1",
         "tape": "^4.6.3",
-        "uglify-js": "^2.8.12"
+        "uglify-js": "^3.3.21"
     },
     "scripts": {
         "test": "node ./test.js",
