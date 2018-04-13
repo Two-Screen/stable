@@ -50,8 +50,9 @@
     },
     "author": "Angry Bytes <info@angrybytes.com>",
     "contributors": [
-        "Stéphan Kochen <stephan@angrybytes.com>",
         "Domenic Denicola <domenic@domenicdenicola.com>",
+        "Mattias Buelens <mattias@buelens.com>",
+        "Stéphan Kochen <stephan@angrybytes.com>",
         "Yaffle"
     ],
     "license": "MIT"

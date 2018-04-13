@@ -8,8 +8,9 @@
     "moduleType": ["globals","node"],
     "authors": [
         "Angry Bytes <info@angrybytes.com>",
-        "Stéphan Kochen <stephan@angrybytes.com>",
         "Domenic Denicola <domenic@domenicdenicola.com>",
+        "Mattias Buelens <mattias@buelens.com>",
+        "Stéphan Kochen <stephan@angrybytes.com>",
         "Yaffle"
     ],
     "license": "MIT",
