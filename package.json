@@ -22,17 +22,18 @@
     ],
     "devDependencies": {
         "rollup": "^0.57.1",
+        "standard": "^11.0.1",
         "tape": "^4.6.3",
         "uglify-js": "^3.3.21"
     },
     "scripts": {
-        "test": "node ./test.js",
+        "test": "standard src/ && node ./src/test.js",
         "prepare": "npm run build && npm run minify",
         "build": "rollup -c",
         "minify": "uglifyjs --comments \"/^!/\" -c -m -o ./stable.min.js ./stable.js"
     },
     "testling": {
-        "files": "./test.js",
+        "files": "./src/test.js",
         "browsers": [
             "ie6",
             "ie7",
