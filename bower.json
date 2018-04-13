@@ -18,6 +18,7 @@
         "node_modules",
         "bower.json",
         "package.json",
+        "rollup.config.js",
         "test.js"
     ]
 }

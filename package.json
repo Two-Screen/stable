@@ -12,14 +12,24 @@
         "url": "https://github.com/Two-Screen/stable.git"
     },
     "main": "./stable.js",
+    "module": "./stable.esm.js",
     "types": "./index.d.ts",
+    "files": [
+        "stable.js",
+        "stable.esm.js",
+        "stable.min.js",
+        "index.d.ts"
+    ],
     "devDependencies": {
+        "rollup": "^0.50.0",
         "tape": "^4.6.3",
         "uglify-js": "^2.8.12"
     },
     "scripts": {
         "test": "node ./test.js",
-        "minify": "uglifyjs --comments '/^!/' -c -m -o ./stable.min.js ./stable.js"
+        "prepublish": "npm run build && npm run minify",
+        "build": "rollup -c",
+        "minify": "uglifyjs --comments \"/^!/\" -c -m -o ./stable.min.js ./stable.js"
     },
     "testling": {
         "files": "./test.js",
