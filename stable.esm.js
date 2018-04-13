@@ -1,4 +1,4 @@
-//! stable.js 0.1.6, https://github.com/Two-Screen/stable
+//! stable.js 0.1.7, https://github.com/Two-Screen/stable
 //! © 2018 Angry Bytes and contributors. MIT licensed.
 
 // A stable array sort, because `Array#sort()` is not guaranteed stable.
