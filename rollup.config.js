@@ -11,9 +11,5 @@ module.exports = {
         file: pkg.main,
         format: 'umd',
         name: 'stable'
-    }, {
-        banner,
-        file: pkg.module,
-        format: 'es'
     }]
 };

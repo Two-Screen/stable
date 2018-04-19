@@ -12,11 +12,9 @@
         "url": "https://github.com/Two-Screen/stable.git"
     },
     "main": "./stable.js",
-    "module": "./stable.esm.js",
     "types": "./index.d.ts",
     "files": [
         "stable.js",
-        "stable.esm.js",
         "stable.min.js",
         "index.d.ts"
     ],
