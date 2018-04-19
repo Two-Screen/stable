@@ -1,5 +1,5 @@
 export as namespace stable;
-export default stable;
+export = stable;
 
 type Comparator<T> = ((a : T, b : T)=>boolean) | ((a: T, b : T)=>number);
 
