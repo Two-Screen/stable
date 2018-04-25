@@ -22,12 +22,6 @@ Then use it in Node.js or some other CommonJS environment as:
 const stable = require('stable')
 ```
 
-Or if you're using ES6 modules:
-
-```js
-import stable from 'stable'
-```
-
 #### From the browser
 
 Include [`stable.js`] or the minified version [`stable.min.js`]
