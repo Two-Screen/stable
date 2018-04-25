@@ -1,4 +1,4 @@
-//! stable.js 0.1.7, https://github.com/Two-Screen/stable
+//! stable.js 0.1.8, https://github.com/Two-Screen/stable
 //! © 2018 Angry Bytes and contributors. MIT licensed.
 
 (function (global, factory) {
