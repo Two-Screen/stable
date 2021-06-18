@@ -1,6 +1,6 @@
 ## Stable
 
-A stable array sort, because `Array#sort()` is not guaranteed stable.
+A stable array sort, because `Array#sort()` is not guaranteed stable prior to ES2019.
 
 MIT licensed.
 
