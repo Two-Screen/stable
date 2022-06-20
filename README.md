@@ -1,3 +1,9 @@
+**NOTE: Modern JavaScript already guarantees `Array#sort()` is a stable sort, so this library has very little use and has been archived.**
+
+See [the compatibility table on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility) for the exact versions of JavaScript runtimes that implement stable sort natively.
+
+---
+
 ## Stable
 
 A stable array sort, because `Array#sort()` is not guaranteed stable.
